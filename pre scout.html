@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de E-mail</title>
+<title>Pré Scout beOn Claro | Embratel</title>
+<link rel="stylesheet" href="https://mondrian.claro.com.br/icons/mondrian-icons-latest.css">
+<link rel="stylesheet" href="https://mondrian.claro.com.br/tokens/claro-tokens-latest.custom-properties.css">
+<link rel="stylesheet" href="https://mondrian.claro.com.br/fonts/mondrian-fonts-latest.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: var(--font-family-base); /* or var(--font-family-highlight) token. */
+            font-weight: var(--font-weight-regular);
             margin: 0;
             padding: 0;
         }
@@ -21,7 +20,7 @@
         .header, .footer {
             text-align: center;
             padding: 10px;
-            background-color: #f4f4f4;
+            background-color: #f3f3f3;
         }
         .header img, .footer img {
             max-width: 100%;
@@ -30,13 +29,18 @@
         .content {
             padding: 20px;
             background-color: #ffffff;
+            text-align: left; /* Adiciona centralização horizontal */
+        }
+        .contentBt {
+            padding: 0px;
+            background-color: #ffffff;
             text-align: center; /* Adiciona centralização horizontal */
         }
-        .content h3 {
-            font-size: 18px; /* Ajusta o tamanho do título conforme necessário */
+        .contentBt h3 {
+            font-size: 15px; /* Ajusta o tamanho do título conforme necessário */
         }
         .content p {
-            font-size: 16px;
+            font-size: 13px;
             line-height: 1.5;
         }
         .button {
@@ -49,22 +53,39 @@
             text-align: center;
             text-decoration: none;
             border-radius: 30px; /* Bordas arredondadas */
-            font-family: Arial, sans-serif;
-            font-size: 16px; /* Tamanho da fonte */
+            font-family: var(--font-family-base); /* or var(--font-family-highlight) token. */
+            font-weight: var(--font-weight-regular);
+            font-size: 12px; /* Tamanho da fonte */
             border: none;
             cursor: pointer;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra opcional */
         }
+        .button:visited .button:active{
+        	color: white;        
+        }
         .button:hover {
             background-color: #a81d16; /* Cor de fundo quando o mouse passa por cima */
         }
+        .footer a{
+			color: red;
+            text-decoration: none;
+		}
+        .footer a img{
+        	max-width:32px;
+        }
+        .appoint{
+        	max-width:30%;
+        }
+                .footer div{
+        text-align: center; /* Adiciona centralização horizontal */
+        }
     </style>
-</head>
-<body>
+
+
     <div class="container">
         <!-- Cabeçalho -->
         <div class="header">
-            <img src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/ba2c6688257b84a27581d4e7b31c5036d74f58c6/headerEmail.png" alt="Cabeçalho">
+            <img alt="Cabeçalho" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/ba2c6688257b84a27581d4e7b31c5036d74f58c6/headerEmail.png">
         </div>
         
         <!-- Corpo do E-mail -->
@@ -72,18 +93,41 @@
             <p>Olá, tudo bem?</p>
             <p>Sou o Fábio Ortiz em cópia estão o João e o Eduardo, fazemos parte do beOn que é o Hub de inovação da Claro e Embratel, atuamos no modelo de inovação aberta, utilizando o venture building e conexões para solucionar desafios internos e externos nos mais diversos segmentos. </p>
             <p>Com esse próposito estamos sempre dispostos a conhecer vocês Startups e as suas soluções! Vamos marcar uma conversa?</p>
+        </div>
+        <div class="contentBt">
+       
             <h3>Clique no link abaixo e escolha a melhor data e horário para você:</h3>
-            <a href="https://outlook.office365.com/book/TechTeamBeOnClaro@globalhitss.com.br/s/XQWwyp4pRUG0-wtwqONVkg2" class="button">Agenda no Microsoft Bookings</a>
+             <img class="appoint" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/bookings2.png" /> <br />
+             <a class="button" href="https://outlook.office365.com/book/TechTeamBeOnClaro@globalhitss.com.br/s/XQWwyp4pRUG0-wtwqONVkg2">Agenda no Microsoft Bookings</a>
+        </div>
+        <div class="content">
             <p>Será uma agenda de uma hora pra que possamos ouvir o seu pitch e conhecer você e seus sócios. Acredito que temos muitas boas histórias e experiências para trocar.</p>
             <p style="font-style: italic;">Obrigado pelo seu tempo e até breve!</p>
-
-</p>
+            <p>
+           		<b>Fábio Ortiz</b> <br />
+            	<span style="font-style: italic;">Tech Team - Hub de Inovação beOn</span> <br/>
+            	📞.: 55 85 99858-1200 <br/>
+            	✉️ fabio.ortiz@globalhitss.com.br  <br />
+        	</p>
         </div>
         
         <!-- Rodapé -->
         <div class="footer">
-            <img src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/footer.png" alt="Cabeçalho">
+        	<img class="Cabeçalho" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/footer.png" />
+            <div class="content">
+            <a target="_blank" href="https://instagram.com/beonclaro">
+            	<img class="redesSociais" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/instagram%20ico.png" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/beonclaro">
+            	<img class="redesSociais" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/linkedinICo.png" />
+           </a>
+           <a target="_blank" href="https://bit.ly/spotify-beoncast">
+           		<img class="redesSociais" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/spotify%20ico.png" />
+           </a>
+           	<a target="_blank" href="https://www.youtube.com/playlist?list=PL3wp6XJvRJDQMKNjVIF-j1_83QEWMz29z">
+            	<img class="redesSociais" src="https://raw.githubusercontent.com/fabiox/beonClaroTechTeam/main/youtube%20ico.png" />
+            </a>
+           </div>
         </div>
     </div>
-</body>
-</html>
+
